@@ -10,7 +10,9 @@ const ExtentableText = ({ children, maxChar = 100 }: Probs) => {
   return (
     <p>
       {text}...
-      <button onClick={() => setstate(!state)}>{state ? "Less" : "More"}</button>
+      <a style={{ cursor: "pointer" }} onClick={() => setstate(!state)}>
+        {state ? "Read Less" : "Read More"}
+      </a>
     </p>
   );
 };
